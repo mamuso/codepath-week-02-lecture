@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Bunny View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BunnyViewController" customModule="codepath_week2_lecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="field" id="YJa-4V-si0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bunny" id="BJB-lt-3vs">
+                                <rect key="frame" x="135" y="249" width="50" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jta-iU-3PP">
+                                <rect key="frame" x="101" y="508" width="19" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="upArrow"/>
+                                <connections>
+                                    <action selector="didPressUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPs-Vk-avj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mzB-rL-zJo">
+                                <rect key="frame" x="128" y="522" width="23" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="rightArrow"/>
+                                <connections>
+                                    <action selector="didPressRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNr-qF-BuU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gc2-zR-p54">
+                                <rect key="frame" x="70" y="522" width="23" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="leftArrow"/>
+                                <connections>
+                                    <action selector="didPressLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsZ-OA-HcT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="q4u-Mx-CSR">
+                                <rect key="frame" x="101" y="535" width="19" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="downArrow"/>
+                                <connections>
+                                    <action selector="didPressDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Irs-9s-Yfl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rkF-PW-AIX">
+                                <rect key="frame" x="165" y="523" width="18" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tear"/>
+                                <connections>
+                                    <action selector="didPressShrink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DmQ-4r-cOl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ESS-rL-YYA">
+                                <rect key="frame" x="204" y="523" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="leaf"/>
+                                <connections>
+                                    <action selector="didPressGrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2C-Hf-o0f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BNk-ma-ddE">
+                                <rect key="frame" x="243" y="525" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="rotateLeft"/>
+                                <connections>
+                                    <action selector="didPressRotateLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDH-cq-eFd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d0K-FO-eeT">
+                                <rect key="frame" x="281" y="525" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="rotateRight"/>
+                                <connections>
+                                    <action selector="didPressRotateRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GH-jy-Ekq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="meN-mb-2PO">
+                                <rect key="frame" x="16" y="518" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.95294117649999999" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKa-65-Ef6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Wnk-oM-2AY">
+                                <rect key="frame" x="23" y="55" width="197" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JV5-cj-TBg">
+                                <rect key="frame" x="233" y="54" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="didPressSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6q9-Rb-ARa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bNy-hU-47l">
+                                <rect key="frame" x="23" y="106" width="278" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bunnyImageView" destination="BJB-lt-3vs" id="PEc-ha-rmU"/>
+                        <outlet property="responseLabel" destination="bNy-hU-47l" id="Sxb-jr-vvg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bunny" width="50" height="70"/>
+        <image name="downArrow" width="19" height="23"/>
+        <image name="field" width="320" height="568"/>
+        <image name="leaf" width="19" height="15"/>
+        <image name="leftArrow" width="23" height="19"/>
+        <image name="rightArrow" width="23" height="19"/>
+        <image name="rotateLeft" width="20" height="20"/>
+        <image name="rotateRight" width="20" height="20"/>
+        <image name="tear" width="12" height="20"/>
+        <image name="upArrow" width="19" height="23"/>
+    </resources>
+</document>
