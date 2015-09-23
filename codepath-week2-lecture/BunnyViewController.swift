@@ -8,10 +8,13 @@
 
 import UIKit
 
-class BunnyViewController: UIViewController {
+class BunnyViewController: UIViewController, UIActionSheetDelegate {
+
 
     @IBOutlet weak var bunnyImageView: UIImageView!
     @IBOutlet weak var responseLabel: UILabel!
+    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var thinking: UIActivityIndicatorView!
     
     let spaceUnit =  CGFloat(20)
     var scale = CGFloat(1.0)
@@ -91,9 +94,38 @@ class BunnyViewController: UIViewController {
     }
     
     @IBAction func didPressSend(sender: AnyObject) {
-        responseLabel.text = "Hey there!"
+        if inputTextField.text == "Hello" {
+            writeBunnyMessage("Hello to you too")
+        } else if inputTextField.text == "What is your name" {
+            writeBunnyMessage("Kingsley")
+        } else {
+            writeBunnyMessage("I don't understand")
+        }
+        
+        inputTextField.text = ""
     }
     
+    func writeBunnyMessage(message: String) {
+        thinking.startAnimating()
+        delay(2, closure: { () -> () in
+            self.responseLabel.text = message
+            self.thinking.stopAnimating()
+        })
+    }
+    
+    @IBAction func didPressLogout(sender: AnyObject) {
+        let actionSheet = UIActionSheet(title: "Are you sure", delegate: self, cancelButtonTitle: "Nah", destructiveButtonTitle: "Go!")
+        
+        actionSheet.showInView(view)
+        
+    }
+    
+    func actionSheet(alertView: UIActionSheet!, clickedButtonAtIndex buttonIndex: Int) {
+        
+        if buttonIndex == 0 {
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 

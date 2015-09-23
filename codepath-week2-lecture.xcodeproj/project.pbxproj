@@ -15,6 +15,8 @@
 		BB9E2E6E1BB241EF00C33927 /* codepath_week2_lectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9E2E6D1BB241EF00C33927 /* codepath_week2_lectureTests.swift */; };
 		BB9E2E791BB241EF00C33927 /* codepath_week2_lectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9E2E781BB241EF00C33927 /* codepath_week2_lectureUITests.swift */; };
 		BB9E2E871BB2439100C33927 /* BunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9E2E861BB2439100C33927 /* BunnyViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		BB9E2E891BB255FB00C33927 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9E2E881BB255FB00C33927 /* Common.swift */; settings = {ASSET_TAGS = (); }; };
+		BB9E2EC51BB2584000C33927 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9E2EC41BB2584000C33927 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BB9E2E781BB241EF00C33927 /* codepath_week2_lectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codepath_week2_lectureUITests.swift; sourceTree = "<group>"; };
 		BB9E2E7A1BB241EF00C33927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9E2E861BB2439100C33927 /* BunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BunnyViewController.swift; sourceTree = "<group>"; };
+		BB9E2E881BB255FB00C33927 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BB9E2EC41BB2584000C33927 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				BB9E2E581BB241EF00C33927 /* AppDelegate.swift */,
 				BB9E2E5A1BB241EF00C33927 /* ViewController.swift */,
 				BB9E2E5C1BB241EF00C33927 /* Main.storyboard */,
+				BB9E2EC41BB2584000C33927 /* LoginViewController.swift */,
+				BB9E2E881BB255FB00C33927 /* Common.swift */,
 				BB9E2E861BB2439100C33927 /* BunnyViewController.swift */,
 				BB9E2E5F1BB241EF00C33927 /* Assets.xcassets */,
 				BB9E2E611BB241EF00C33927 /* LaunchScreen.storyboard */,
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB9E2E891BB255FB00C33927 /* Common.swift in Sources */,
 				BB9E2E5B1BB241EF00C33927 /* ViewController.swift in Sources */,
 				BB9E2E591BB241EF00C33927 /* AppDelegate.swift in Sources */,
+				BB9E2EC51BB2584000C33927 /* LoginViewController.swift in Sources */,
 				BB9E2E871BB2439100C33927 /* BunnyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +495,7 @@
 				BB9E2E7F1BB241EF00C33927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB9E2E801BB241EF00C33927 /* Build configuration list for PBXNativeTarget "codepath-week2-lectureTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				BB9E2E821BB241EF00C33927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB9E2E831BB241EF00C33927 /* Build configuration list for PBXNativeTarget "codepath-week2-lectureUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				BB9E2E851BB241EF00C33927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
